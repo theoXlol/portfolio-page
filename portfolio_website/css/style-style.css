@@ -292,7 +292,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../images/assets-pokemonapp2.jpg");
+    background-image: url("images/assets-pokemonapp.jpg");
     background-size: cover;
     opacity: 1;
     transition: opacity 150ms;
@@ -327,7 +327,7 @@ footer {
     color: #000;
     cursor: pointer;
     font-weight: bold;
-    padding: 5px 7.5px;
+    padding: 5px 7.5008px;
     text-align: center;
     transition: 200ms;
     box-sizing: border-box;
