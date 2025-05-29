@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.whyme {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+nav {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background-color: rgb(255, 238, 0);
+
+}
+
+.col-md-8 {
+    text-align: center;
+}
+
+#typewriting-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+#typewriting-text:before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 245px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-left: 3px solid rgb(0, 0, 0);
+    color: white;
+    animation: animate 4s steps(21) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+section {
+    overflow: hidden;
+}
+
+.imghover {
+    margin-top: 10px;
+    display: block;
+    margin-inline: auto;
+    border-radius: 100%;
+    border: solid black 4px;
+    box-shadow: rgba(0, 0, 0, 0.568) 0px 20px 30px -10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+#div1 {
+    margin-top: 40%;
+}
+
+.imghover:hover,
+#fiverrButton:hover {
+    transform: translateY(-20px);
+}
+
+#header2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.row {
+    display: block;
+    margin-inline: auto;
+}
+
+#row1 {
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 70%;
+    margin-bottom: 50%;
+}
+
+.col-md-2 {
+    text-align: center;
+    margin-inline: auto;
+}
+
+div {
+    padding: 0;
+}
+
+svg {
+    width: 35%;
+    height: auto;
+
+}
+
+.col-md-2:nth-child(4) {
+    transition-delay: 200ms;
+}
+
+.col-md-2:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.col-md-2:nth-child(2) {
+    transition-delay: 600ms;
+}
+
+#aboutme {
+    background-color: yellow;
+    border-radius: 20px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.bar {
+    margin-inline: auto;
+    background-color: rgb(226, 224, 224);
+    width: 70%;
+    margin-bottom: 10px;
+
+}
+
+#row2 {
+    margin: 20px 0;
+}
+
+.bar-fill {
+    background-color: rgb(160, 160, 26);
+}
+
+#React {
+    width: 100%;
+}
+
+#NodeJS {
+    width: 90%;
+}
+
+#Lua {
+    width: 80%;
+}
+
+#Express {
+    width: 70%;
+}
+
+#Python {
+    width: 60%;
+}
+
+.tag {
+    background-color: yellow;
+    width: 115px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#projectDiv {
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+#divLine {
+    width: 10%;
+    border-bottom: 4px solid black;
+    margin-inline: auto;
+}
+
+#discordpic {
+    margin-inline: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#row3 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.serviceTitle {
+    border-bottom: 4px solid rgb(43, 42, 42);
+}
+
+.servicediv {
+    margin-inline: auto;
+    transition: background 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+.servicediv:hover {
+    background-color: rgb(255, 254, 187);
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+}
+
+
+#pokemonimg {
+    position: relative;
+    background-color: antiquewhite;
+    margin-inline: auto;
+    height: 261px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#pokemonimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/assets-pokemonapp2.jpg");
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 150ms;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.projectText {
+    padding-top: 20px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: ease-in transform 150ms;
+}
+
+.projectText:nth-child(2) {
+    color: rgb(110, 112, 117);
+
+}
+
+.visitsitebutton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.visitsitebutton {
+
+    position: relative;
+    background-color: #f0e000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 7.5px;
+    text-align: center;
+    transition: 200ms;
+    box-sizing: border-box;
+    font-size: 16px;
+    bottom: 0;
+    border: none;
+    transform: translateY(30px);
+    transition: ease-in transform 150ms;
+}
+
+
+
+#pokemonimg:hover::before {
+    opacity: 0;
+}
+
+#pokemonimg:hover .projectText {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#pokemonimg:hover .visitsitebutton {
+    z-index: 5;
+    transform: translateY(0);
+}
+
+@media only screen and (min-width: 769px) {
+    nav {
+        background-color: rgb(255, 255, 255);
+    }
+
+    #row1 {
+        margin-top: 17%;
+        margin-bottom: 10%;
+    }
+
+    #row2 {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    #div1 {
+        margin-top: 10%;
+    }
+
+    .imghover {
+        margin-inline: 0;
+    }
+
+    #aboutme {
+        font-size: 2em;
+        color: grey;
+    }
+
+    #pokemonimg{
+        width: 530px;
+        height: 461px;
+    }
+
+    #pokemonimg::before {
+        background-image: url("../images/assets-pokemonapp.jpg");
+    }
+
+}
